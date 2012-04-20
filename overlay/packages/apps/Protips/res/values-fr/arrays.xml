@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="tips">
+        <!-- Tip: Welcome -->
+        <item>Welcome to OMGB Beta 2 from Bytecode.\n
+        Everything is stable and working now! @drawable/welcome</item>
+
+        <!-- Tip: IRC -->
+        <item>IRC Anyone?\n
+        The IRC is a pretty cool place. You should stop by sometime. #omfx </item>
+
+        <!-- Tip: Twitter -->
+        <item>Follow us on Twitter.\n
+        @r2DoesInc @xoomdev @linuxmotion @_Bytecode_ </item>
+
+        <!-- Tip: Blurb -->
+        <item>Uhhhmmm....\n
+        My volcano is cooler than yours.</item>
+
+        <!-- Tip: Contact -->
+        <item>Any questions?\n
+        r2doesinc@gmail.com</item>
+
+        <!-- Tip: Thanks-->
+        <item>Thank you!\n
+        Quick thank you to all my donators! And to the XDA community.</item>
+    <item msgid="4457112202911142877">"Accéder à toutes vos applications"\n" Appuyez sur le lanceur d\'applications. @drawable/all_apps"</item>
+    <item msgid="8842580895829057430">"Faites glisser les applications vers votre écran d\'accueil."\n" Appuyez sur une application du lanceur d\'applications jusqu\'à ce qu\'elle vibre."</item>
+    <item msgid="8903218961940756528">"Organiser l\'écran d\'accueil"\n" Appuyez sur un élément et maintenez. Lorsqu\'il vibre, placez-le à l\'endroit souhaité."</item>
+    <item msgid="3123213860439458492">"Supprimer un élément"\n" Appuyez sur l\'élément et maintenez. Lorsqu\'il vibre, déplacez-le vers la corbeille. @drawable/trash"</item>
+    <item msgid="1000948398885889319">"Écrans d\'accueil multiples"\n" Faites glisser l\'écran vers la droite/gauche. Déplacez les icônes d\'un écran à l\'autre."</item>
+    <item msgid="424487960942281801">"Supprimer ce widget ?"\n" Appuyez dessus et maintenez. Quand il vibre, déplacez-le vers la corbeille."</item>
+  </string-array>
+</resources>

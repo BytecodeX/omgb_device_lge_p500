@@ -65,6 +65,12 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dwext -iwlan0 -c/data/misc/wi
 on property:dev.bootcomplete=1
     exec /system/bin/hwaddrs
 
-## Set proper baseband version after getting the dummy from RIL
 on property:gsm.version.baseband=V07u-000-000-MAR-23-2009
     start setapversion
+# LGE_MERGE_S
+# Boot logo in init script, munyoung.hwang@lge.com
+service bootlogo sbin/bootlogo
+	user root
+	group root
+	oneshot
+# LGE_MERGE_E

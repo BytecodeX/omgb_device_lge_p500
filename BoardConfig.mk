@@ -8,7 +8,7 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_LIBS := true
 BOARD_USES_QCOM_LIBRPC := true
 
-ARGET_NO_BOOTLOADER := true
+TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm7k
 TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv6-vfp
@@ -34,7 +34,7 @@ TARGET_PREBUILT_KERNEL := device/lge/p500/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_PROVIDES_LIBAUDIO := true
-TARGET_PROVIDES_LIBRIL := true
+TARGET_PROVIDES_LIBCOPYBIT := true
 
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -53,15 +53,14 @@ TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 #BOARD_USE_CAF_LIBCAMERA := true
 
 BOARD_WLAN_DEVICE := bcm4325
-WIFI_DRIVER_FW_STA_PATH         := "/system/etc/wl/rtecdc.bin"
-WIFI_DRIVER_FW_AP_PATH          := "/system/etc/wl/rtecdc-apsta.bin"
-WIFI_DRIVER_MODULE_NAME         := "wireless"
-WIFI_DRIVER_MODULE_PATH         := "/system/lib/modules/wireless.ko"
-WIFI_DRIVER_MODULE_ARG          := "firmware_path=/etc/wl/rtecdc.bin nvram_path=/etc/wl/nvram.txt config_path=/data/misc/wifi/config"
-WPA_SUPPLICANT_VERSION          := VER_0_6_X
-WIFI_DRIVER_HAS_LGE_SOFTAP      := true
-BOARD_WEXT_NO_COMBO_SCAN       := true
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+WPA_SUPPLICANT_VERSION := VER_0_5_X
+WIFI_DRIVER_FW_AP_PATH := "/system/etc/wl/rtecdc-apsta.bin"
+WIFI_DRIVER_FW_STA_PATH := "/system/etc/wl/rtecdc.bin"
+WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/wl/rtecdc.bin nvram_path=/system/etc/wl/nvram.txt"
+WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wireless.ko"
+WIFI_DRIVER_MODULE_NAME := wireless
+WIFI_DRIVER_HAS_LGE_SOFTAP := true
 
 BOARD_FM_DEVICE := bcm4325
 BOARD_HAVE_FM_RADIO := true

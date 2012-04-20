@@ -1,3 +1,5 @@
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),p500)
+
 # When zero we link against libmmcamera; when 1, we dlopen libmmcamera.
 DLOPEN_LIBMMCAMERA:=1
 
@@ -27,3 +29,5 @@ endif
 
 LOCAL_MODULE:= libcamera
 include $(BUILD_SHARED_LIBRARY)
+
+endif

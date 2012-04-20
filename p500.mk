@@ -41,12 +41,24 @@ PRODUCT_COPY_FILES += \
 
 # chargermode
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/chargemode/sbin/bootlogo:root/sbin/bootlogo \
+    $(LOCAL_PATH)/chargemode/sbin/chargerlogo:root/sbin/chargerlogo \
+    $(LOCAL_PATH)/chargemode/sbin/ftm_power:root/sbin/ftm_power \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_01.rle:root/bootimages/opening_01.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_02.rle:root/bootimages/opening_02.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_03.rle:root/bootimages/opening_03.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_04.rle:root/bootimages/opening_04.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_05.rle:root/bootimages/opening_05.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_06.rle:root/bootimages/opening_06.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_07.rle:root/bootimages/opening_07.rle \
+    $(LOCAL_PATH)/chargemode/bootimages/opening_08.rle:root/bootimages/opening_08.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_bg.rle:root/chargerimages/battery_bg.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_ani_03.rle:root/chargerimages/battery_ani_03.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_ani_04.rle:root/chargerimages/battery_ani_04.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_ani_05.rle:root/chargerimages/battery_ani_05.rle \
-    $(LOCAL_PATH)/chargemode/chargerimages/battery_bg.rle:root/chargerimages/battery_bg.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_02.rle:root/chargerimages/battery_charging_02.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_03.rle:root/chargerimages/battery_charging_03.rle \
@@ -55,8 +67,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_06.rle:root/chargerimages/battery_charging_06.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_wait_ani_02.rle:root/chargerimages/battery_wait_ani_02.rle \
-    $(LOCAL_PATH)/chargemode/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle \
-    $(LOCAL_PATH)/chargemode/chargerlogo:root/sbin/chargerlogo
+    $(LOCAL_PATH)/chargemode/init:root/init \
+
+# SDCard mount info file
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/vold.fstab:system/etc/vold.fstab
+
+# APNs Config file
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 # Permission files
 PRODUCT_COPY_FILES += \
@@ -75,9 +94,6 @@ PRODUCT_PACKAGES += \
     gps.p500 \
     lights.p500 \
     hwaddrs \
-    copybit.msm7k \
-    libOmxCore \
-    libcamera \
     lgapversion
 
 $(call inherit-product, build/target/product/full.mk)
